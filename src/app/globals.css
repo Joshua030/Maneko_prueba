@@ -1,9 +1,8 @@
 :root {
   --max-width: 1440px;
-  --border-radius: 12px;
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bg-main:#a5b98e;
+  --bd-container: 1px solid #000;
+  --cream:#F7F6F2
 }
 
 * {
@@ -28,7 +27,6 @@ a {
 
   .container{
     width: 100%;
- 
   }
 
   .innercontainer {
