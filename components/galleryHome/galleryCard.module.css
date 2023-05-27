@@ -1,0 +1,28 @@
+.mainContainer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+
+
+.mainContainer p:first-of-type {
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.titleContainer{
+  height: 122px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.imgContainer{
+  position: relative;
+  height: 590px;
+  width: 100%;
+}

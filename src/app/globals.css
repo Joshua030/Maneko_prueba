@@ -36,3 +36,10 @@ a {
     height: 100%;
     margin: 0 auto;
   }
+
+  .buttonLabel{
+    font-size: 11px;
+    padding: 4px 13px;
+    background-color: #F7F6F2;
+    border-radius: 72px;
+  }

@@ -1,0 +1,29 @@
+[
+  {
+    "imgUrl": "/static/gallery/mujer-sonriendo.png",
+    "productDescription": "Limpiadores y tónicos",
+    "productId": 1
+    
+  },
+  {
+    "imgUrl": "/static/gallery/mujer-sonriendo-1.png",
+    "productDescription": "Cremas hidratantes",
+    "productId": 2
+    
+  },
+  {
+    "imgUrl": "/static/gallery/mujer-sonriendo-3.png",
+    "productDescription": "Sérums",
+    "productId": 3
+  },
+  {
+    "imgUrl": "/static/gallery/mujer-sonriendo-4.png",
+    "productDescription": "Protección solar",
+    "productId": 4
+  },
+  {
+    "imgUrl": "/static/gallery/mujer-sonriendo-5.png",
+    "productDescription": "Cremas antiedad",
+    "productId": 5
+  }
+]

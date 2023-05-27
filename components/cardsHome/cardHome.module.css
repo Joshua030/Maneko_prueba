@@ -1,0 +1,51 @@
+.mainContainer{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 140px;
+ justify-content: flex-end;
+ align-items: center;
+ gap: 4px;
+ padding-left: 101px;
+ padding-right: 101px;
+}
+
+.categoryButton{
+  margin-bottom: 4px;
+}
+
+
+.mainContainer h3 {
+font-size: 32px;
+line-height: 42px;
+text-align: center;
+margin-bottom: 12px;
+}
+
+.mainContainer p:first-of-type {
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mainContainer p:nth-of-type(2) {
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.buyButton{
+    width: 160px;
+    height: 49px;
+    border-radius: 60px;
+    background-color: var(--bg-main);
+    border: none;
+    font-size: 20px;
+    color: #fff; 
+}
+
+.buyButton:hover{
+cursor: pointer;
+}
