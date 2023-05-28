@@ -3,7 +3,7 @@ import styles from "./footer.module.css";
 
 const Footer = () => {
   return (
-    <div className={`${styles.mainContainer} container`}>
+    <footer className={`${styles.mainContainer} container`}>
       <div className={`${styles.innerContainer}`}>
         <div className={styles.externalNewsContainer}>
           <div className={styles.newsContainer}>
@@ -109,7 +109,7 @@ const Footer = () => {
         </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

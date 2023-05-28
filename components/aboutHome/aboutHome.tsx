@@ -34,7 +34,7 @@ const AboutHome = () => {
                 <div className={styles.iconContainer}>
                 <Image
                   src="/static/simbolo-cuidado-manos.svg"
-                  alt="simbolo gotero"
+                  alt="simbolo cuidado manos"
                   width={60}
                   height={60}
                 />
@@ -48,7 +48,7 @@ const AboutHome = () => {
               <div className={styles.itemContainer}>
                 <Image
                   src="/static/simbolo-piel-respirando.svg"
-                  alt="simbolo gotero"
+                  alt="simbolo piel respirando"
                   width={60}
                   height={60}
                 />

@@ -1,0 +1,161 @@
+.externalMainContainer {
+  border-bottom: var(--bd-container);
+}
+
+.innerMainContainer {
+  max-width: var(--max-width);
+  width: 100%;
+  height: 83px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0 55px;
+  z-index: 9995;
+  position: relative;
+}
+
+.mainMenuContainer {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.btnNav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #333;
+  z-index: 9997;
+}
+
+.btnNav:hover{
+  cursor: pointer;
+}
+
+.mainMenu ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.logoContainer {
+  position: relative;
+  height: 100%;
+}
+
+.logoContainer img {
+  object-fit: cover;
+}
+.userMenuContainer {
+  display: flex;
+  gap: 45px;
+  justify-self: end;
+}
+
+.btnIcon {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.closeOutline {
+  display: none;
+}
+
+.navVisible .closeOutline {
+  display:block;
+}
+
+.navVisible .menuOutline{
+  display: none;
+}
+
+
+.responsiveNavigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    to right,
+    #fff 0%,
+    #fff 26%,
+    rgba(0, 0, 0, 0.25) 26%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 0.5s ease-in;
+}
+
+.navVisible .responsiveNavigation {
+  opacity: 1;
+  z-index:9000;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.navVisible .mainMenu ul li:nth-child(-n+3){
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navVisible .mainMenu ul:li:last-child{
+  pointer-events: none;
+}
+
+.navVisible .logoContainer{
+  pointer-events: none;
+}
+
+.navVisible .userMenuContainer{
+  pointer-events: none;
+}
+
+.innerNavigation {
+  max-width: var(--max-width);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 28% 82%;
+}
+
+.innerMenu {
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding-top: 88px;
+  padding-left: 62px;
+}
+
+.innerMenuTitle h3 {
+  color: #000;
+  opacity: 0.25;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.innerMenuNav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.innerMenuNav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  line-height: 44px;
+}

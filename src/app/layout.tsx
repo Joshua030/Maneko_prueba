@@ -1,4 +1,5 @@
 import Footer from "../../components/footer/footer";
+import Header from "../../components/header/header";
 import "./globals.css";
 import { Questrial } from "next/font/google";
 
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={questrial.className}>
+        <Header />
         {children} 
         <Footer />
       </body>

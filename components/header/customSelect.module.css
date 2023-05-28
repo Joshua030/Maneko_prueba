@@ -1,0 +1,50 @@
+
+.navContainer {
+  display: flex;
+  align-items: flex-start;
+  margin-left: auto;
+  position: relative;
+}
+
+.languageBtn{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #888;
+  border: none;
+  background-color: transparent;
+  width: 100px;
+}
+
+.languageBtn:hover{
+  cursor: pointer;
+}
+
+.language {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.navDropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+.linkName {
+  cursor: pointer;
+  color: #888;
+  font-size: 18px;
+  line-height: 23px;
+  padding-left: 23px;
+  border: none;
+  background: transparent;
+  border-bottom: var(--bd-container);
+}
+
+
+.lineWrapper {
+  padding-top: 0.5rem /* 8px */;
+  padding-bottom: 0.5rem /* 8px */;
+}
+
