@@ -174,9 +174,9 @@
     padding: 0 32px;
   }
 
-  .logoContainer .btnNav img:first-child{
+  /* .logoContainer .btnNav img:first-child{
     display: none;
-  }
+  } */
   .logoContainer img {
     transform: scale(2.5);
     object-position: 100% 41%;

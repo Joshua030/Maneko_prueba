@@ -1,16 +1,16 @@
-.mainContainer{
-    width: 100%;
-    height: 1018px;
-    border-top: var(--bd-container);
+.mainContainer {
+  width: 100%;
+  height: 1018px;
+  border-top: var(--bd-container);
 }
 
-.innerContainer{
+.innerContainer {
   display: flex;
   flex-direction: column;
   border-bottom: var(--bd-container);
 }
 
-.titleContainer{
+.titleContainer {
   max-width: var(--max-width);
   width: 100%;
   height: 153px;
@@ -21,17 +21,17 @@
   gap: 32px;
 }
 
-.titleContainer h2{
+.titleContainer h2 {
   font-size: 64px;
 }
-.information{
+.information {
   height: 867px;
   width: 100%;
   display: flex;
   border-top: var(--bd-container);
 }
 
-.informationContainer{
+.informationContainer {
   width: 50%;
   height: 100%;
   background-color: var(--cream);
@@ -39,34 +39,32 @@
   justify-content: flex-end;
 }
 
-.innerInformationContainer{
-max-width: 722px;
-width: 100%;
-padding: 97px 70px 54px 126px;
+.innerInformationContainer {
+  max-width: 722px;
+  width: 100%;
+  padding: 97px 70px 54px 126px;
 }
 
-.itemContainer{
-display: flex;
-align-items: flex-start;
-gap: 44px;
+.itemContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 44px;
 }
 
-.innerInformationContainer .itemContainer{
+.innerInformationContainer .itemContainer {
   margin-bottom: 97px;
 }
 
-.innerInformationContainer .itemContainer:nth-child(3){
+.innerInformationContainer .itemContainer:nth-child(3) {
   margin-bottom: 86px;
 }
 
-
-
-.itemContainer p{
+.itemContainer p {
   font-size: 24px;
   line-height: 32px;
 }
 
-.imgContainer{
+.imgContainer {
   width: 50%;
   height: 100%;
   background-image: url("/static/crystalweed-cannabis.png");
@@ -87,4 +85,61 @@ gap: 44px;
 
 .moreInformation:hover {
   cursor: pointer;
+}
+
+@media (max-width: 544px) {
+  .titleContainer {
+    padding-left: 24px;
+    gap: 8px;
+  }
+
+  .titleContainer h2 {
+    font-size: 40px;
+  }
+
+  .informationContainer {
+    width: 100%;
+  }
+  
+  .information {
+   flex-direction: column;
+  }
+
+  .imgContainer {
+    width: 100%;
+  }
+
+  .mainContainer {
+    height: auto;
+  }
+
+  .innerInformationContainer {
+    padding: 48px 24px;
+  }
+
+  .information {
+    height: auto;
+
+  }
+
+  .itemContainer p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .moreInformation {
+    display: none;
+  }
+
+  .innerInformationContainer .itemContainer:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .innerInformationContainer .itemContainer {
+    margin-bottom: 40px;
+  }
+
+  .imgContainer {
+  height: 464px;
+  }
 }

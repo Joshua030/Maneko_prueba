@@ -71,13 +71,23 @@ const Footer = () => {
                     </li>
                   </ul>
                 </nav>
-                <nav className={styles.mainMenu}>
+                <nav className={`${styles.mainMenu} ${styles.destok}`}>
                   <div className={styles.mainMenuTitle}>
                     <h3>Contacto</h3>
                   </div>
                   <ul>
                     <li>
                       <Link href="mailto:Hello@thegoodcream.com">Hello@thegoodcream.com</Link>
+                    </li>
+                  </ul>
+                </nav>
+                <nav className={`${styles.mainMenu} ${styles.mobile}`}>
+                  <div className={styles.mainMenuTitle}>
+                    <h3>Más información</h3>
+                  </div>
+                  <ul>
+                    <li>
+                      <Link href="#">Contactar</Link>
                     </li>
                   </ul>
                 </nav>

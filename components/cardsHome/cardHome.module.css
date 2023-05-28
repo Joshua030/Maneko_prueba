@@ -50,8 +50,37 @@ margin-bottom: 12px;
 cursor: pointer;
 }
 
+.arrowsContainer{
+  display: none;
+}
+
 @media (max-width: 544px) {
   .mainContainer{
     padding: 48px 64px 64px 64px;
+    position: relative;
+  }
+
+  .arrowsContainer {
+    position: absolute;
+    top: 30%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+  
+  .arrowsContainer img:hover {
+    cursor: pointer;
+  }
+
+  .arrowBtn{
+    border: none;
+    background-color: transparent;
+  }
+  
+  .arrowBtn:hover{
+    cursor: pointer;
   }
 }

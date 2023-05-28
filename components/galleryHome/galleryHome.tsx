@@ -5,6 +5,7 @@ interface Props {
   title: string;
   data: {
     imgUrl: string;
+    imgUrlMb:string;
     productDescription: string;
     productId: number;
   }[];
@@ -23,12 +24,14 @@ const GalleryHome = ({ title, data }: Props) => {
           {data?.map(
             ({
               imgUrl,
+              imgUrlMb,
               productDescription,
               productId,
             }) => (
               <div key={productId} className={`${styles.cardSectionContainer} container`}>
                 <GalleryCard
                   imgUrl={imgUrl}
+                  imgUrlMb={imgUrlMb}
                   imgName={productDescription}
                   productDescription={productDescription}
                 />

@@ -77,13 +77,6 @@ const Header = () => {
               // height={83}
               fill
             />
-            <Image
-              src="/static/logo-principal-mb.png"
-              alt="logo principal"
-              // width={417}
-              // height={83}
-              fill
-            />
           </button>
         </div>
         <div className={styles.userMenuContainer}>

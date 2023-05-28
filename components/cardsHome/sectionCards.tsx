@@ -17,7 +17,25 @@ interface Props {
 }
 
 const SectionCards = ({ title, data }: Props) => {
-  const [count, setcount] = useState(0);
+  const [count, setCount] = useState(0);
+
+  const handleAdd = () => {
+    // Implement the logic to handle add here
+    if(data.length-1===count){
+      setCount(0)
+      return
+    }
+    setCount((prevCount) => prevCount + 1);
+  };
+
+  const handleSubtract = () => {
+    if(count===0){
+      setCount(data.length-1)
+      return
+    }
+    // Implement the logic to handle subtract here
+    setCount((prevCount) => prevCount - 1);
+  };
   return (
     <div className={`${styles.mainContainer} container`}>
       <div className={`${styles.innerContainer} innercontainer`}>
@@ -36,6 +54,8 @@ const SectionCards = ({ title, data }: Props) => {
             price={data[count].price}
             width={data[count].width}
             height={data[count].height}
+            handleAdd={handleAdd}
+            handleSubtract={handleSubtract}
           />
         </div>
         <div className={`${styles.productsContainer} ${styles.mobile}`}>

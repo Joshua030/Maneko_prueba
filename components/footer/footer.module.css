@@ -62,7 +62,8 @@
 .thirdNewsContainer input::placeholder {
   font-size: 24px;
   line-height: 32px;
-  color: #666;
+  color: #000;
+  opacity: 0.25;
 }
 
 .thirdNewsContainer input:focus {
@@ -148,4 +149,59 @@
   color: #fff;
   font-size: 14px;
   line-height: 17px;
+}
+.mainMenu.mobile{
+  display: none;
+}
+
+@media (max-width: 544px) {
+  .newsContainer {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 40px 34px 80px 34px;
+  }
+
+  .firstNewsContainer {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .SecondNewsContainer {
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  .thirdNewsContainer {
+    width: 100%;
+    padding: 0;
+  }
+
+  .mainInformation {
+    padding: 65px 41px 65px 24px;
+    height: auto;
+    grid-template-columns: 50% 50%;
+  }
+
+  .secondaryInformation {
+    margin-top: 56px;
+    grid-column: span 2/-1;
+    width: 100%;
+  }
+  .policiesInformation{
+    display: none;
+  }
+
+  .mainMenu.destok{
+display: none;
+  }
+
+  .mainMenu.mobile{
+    display: block;
+  }
+
+  .externalCopyright {
+    height: 49px;
+  
+  }
 }
