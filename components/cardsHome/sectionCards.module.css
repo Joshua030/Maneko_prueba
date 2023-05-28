@@ -38,3 +38,32 @@ height: 974px;
 .cardSectionContainer:not(:last-child){
   border-right: var(--bd-container);
 }
+
+.cardMobileCarousel{
+  display: none;
+}
+
+
+@media (max-width: 544px) {
+
+.titleInnerContainer{
+  padding-left: 24px;
+}
+
+.titleInnerContainer h2 {
+  font-size: 40px;
+}
+
+.productsContainer.mobile{
+  display: none;
+}
+
+.mainContainer{
+  height: auto;
+  }
+  
+  .cardMobileCarousel{
+    display: block;
+  }
+
+}

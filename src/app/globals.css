@@ -21,12 +21,16 @@ a {
   text-decoration: none;
 }
 
-  /************************/
+
   /*GENERAL REUSABLE COMPONENTS*/
   /************************/
 
   .container{
     width: 100%;
+  }
+
+  .mobile{
+    display: none;
   }
 
   .innercontainer {
@@ -42,4 +46,14 @@ a {
     padding: 4px 13px;
     background-color: #F7F6F2;
     border-radius: 72px;
+  }
+
+  @media (max-width: 544px){
+    .mobile{
+      display: block;
+    }
+
+    .destok{
+      display: none;
+    }
   }

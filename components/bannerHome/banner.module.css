@@ -1,32 +1,52 @@
 .mainContainer {
   /* width: 100%; */
   height: 940px;
-  border-bottom: var(--bd-container)
+  border-bottom: var(--bd-container);
 }
 
 .innerContainer {
   align-items: center;
 }
 
-.imgContainer {
-  position: relative;
+.externalImgContainer {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
   width: 50%;
   height: 100%;
+}
+
+.imgContainer {
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  max-width: 720px;
+  width: 100%;
+  height: 870px;
+  /* display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; */
+  padding-left: 14px;
+}
+
+.imgContainer img {
+  object-fit: contain;
+  left: 34px;
 }
 
 .arrowsContainer {
-  position: absolute;
-  bottom: 32px;
+  height: 71px;
+  max-width: 720px;
+  width: 100%;
   display: flex;
-  gap: 580px;
-  right: 33px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 35px;
 }
 
-.arrowsContainer img:hover{
-cursor: pointer;
+.arrowsContainer img:hover {
+  cursor: pointer;
 }
 
 .mainTitle {
@@ -60,7 +80,11 @@ cursor: pointer;
   height: 64px;
   align-items: center;
   border-top: var(--bd-container);
-  border-bottom:var(--bd-container);
+  border-bottom: var(--bd-container);
+}
+
+.informationSecondContainer.mobile {
+  display: none;
 }
 
 .informationSecondContainer .firstItem:not(:first-child) {
@@ -100,4 +124,89 @@ cursor: pointer;
 
 .moreInformation:hover {
   cursor: pointer;
+}
+
+@media (max-width: 544px) {
+  .mainContainer {
+    /* width: 100%; */
+    height: auto;
+  }
+
+  .innerContainer {
+    flex-direction: column-reverse;
+  }
+
+  .imgContainer {
+    width: 100%;
+  }
+
+  .informationContainer {
+    width: 100%;
+    border-left: none;
+    border-bottom: var(--bd-container);
+  }
+
+  .informationDescription.mobile {
+    display: none;
+  }
+
+  .informationFirstContainer {
+    padding: 18px 24px 32px 24px;
+  }
+
+  .mainTitle {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .informationDescription {
+    font-size: 16px;
+    line-height: 24px;
+    width: 330px;
+  }
+
+  .informationSecondContainer {
+    display: none;
+  }
+
+  .informationSecondContainer.mobile {
+    display: block;
+  }
+
+  .buttonContainer {
+    display: none;
+  }
+
+  .externalImgContainer {
+    width: 100%;
+    height: 383px;
+    padding-bottom: 42px;
+  }
+
+  .arrowsContainer {
+    position: absolute;
+    top: 50%;
+  }
+
+  .externalImgContainer {
+    position: relative;
+  }
+
+  .firstItem {
+    height: 110px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+    padding-left: 24px;
+    padding-right: 101px;
+  }
+
+  .firstItemTitle {
+    padding-left: 0;
+  }
+
+  .firstItem p {
+   line-height: 24px;
+  }
 }

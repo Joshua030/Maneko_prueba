@@ -49,3 +49,9 @@ margin-bottom: 12px;
 .buyButton:hover{
 cursor: pointer;
 }
+
+@media (max-width: 544px) {
+  .mainContainer{
+    padding: 48px 64px 64px 64px;
+  }
+}

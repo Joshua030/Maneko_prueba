@@ -48,3 +48,11 @@
   padding-bottom: 0.5rem /* 8px */;
 }
 
+@media (max-width: 544px){
+
+  .container{
+    display: none;
+  }
+
+}
+
