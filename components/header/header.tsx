@@ -80,7 +80,9 @@ const Header = () => {
           </button>
         </div>
         <div className={styles.userMenuContainer}>
-          <CustomSelect />
+          <div className={styles.customDestok}>
+            <CustomSelect />
+          </div>
           <button className={styles.btnIcon}>
             <Image
               src="/static/icons/user.svg"
@@ -154,6 +156,55 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
+            <div className={`${styles.userMenuContainer} ${styles.mobile}`}>
+              <button className={styles.btnIcon}>
+                <Image
+                  src="/static/icons/user.svg"
+                  alt="logo de usuario"
+                  width={26}
+                  height={26}
+                />
+              </button>
+              <button className={styles.btnIcon}>
+                <Image
+                  src="/static/icons/search.svg"
+                  alt="logo lupa"
+                  width={26}
+                  height={26}
+                />
+              </button>
+              <button className={styles.btnIcon}>
+                <Image
+                  src="/static/icons/shopping-cart.svg"
+                  alt="logo carro de compras"
+                  width={26}
+                  height={26}
+                />
+              </button>
+            </div>
+            <div className={styles.socialContainer}>
+              <div className={styles.customMobile}>
+                <CustomSelect />
+              </div>
+              <div className={styles.socialButtons}>
+                <button className={styles.btnIcon}>
+                  <Image
+                    src="/static/icons/instagram-icon.svg"
+                    alt="logo carro de compras"
+                    width={26}
+                    height={26}
+                  />
+                </button>
+                <button className={styles.btnIcon}>
+                  <Image
+                    src="/static/icons/shopping-cart.svg"
+                    alt="logo carro de compras"
+                    width={26}
+                    height={26}
+                  />
+                </button>
+              </div>
+            </div>
           </div>
           <div className={styles.emptySpace}></div>
         </div>

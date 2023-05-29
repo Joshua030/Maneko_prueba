@@ -126,7 +126,23 @@
   cursor: pointer;
 }
 
-@media (max-width: 544px) {
+@media (max-width: 1300px) {
+  .firstItemTitle {
+    width: 220px;
+    padding-left: 23px;
+  }
+
+  .informationSecondContainer .firstItem:first-child  .firstItemTitle{
+    width: 214px;
+  }
+
+
+  .informationSecondContainer .firstItem:last-child  .firstItemTitle{
+    width: 212px;
+  }
+}
+
+@media (max-width: 850px) {
   .mainContainer {
     /* width: 100%; */
     height: auto;
@@ -207,6 +223,6 @@
   }
 
   .firstItem p {
-   line-height: 24px;
+    line-height: 24px;
   }
 }

@@ -150,11 +150,11 @@
   font-size: 14px;
   line-height: 17px;
 }
-.mainMenu.mobile{
+.mainMenu.mobile {
   display: none;
 }
 
-@media (max-width: 544px) {
+@media (max-width: 850px) {
   .newsContainer {
     grid-template-columns: 1fr;
     height: auto;
@@ -188,20 +188,19 @@
     grid-column: span 2/-1;
     width: 100%;
   }
-  .policiesInformation{
+  .policiesInformation {
     display: none;
   }
 
-  .mainMenu.destok{
-display: none;
+  .mainMenu.destok {
+    display: none;
   }
 
-  .mainMenu.mobile{
+  .mainMenu.mobile {
     display: block;
   }
 
   .externalCopyright {
     height: 49px;
-  
   }
 }

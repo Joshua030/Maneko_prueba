@@ -44,7 +44,8 @@ height: 974px;
 }
 
 
-@media (max-width: 544px) {
+
+@media (max-width: 850px) {
 
 .titleInnerContainer{
   padding-left: 24px;
@@ -59,11 +60,12 @@ height: 974px;
 }
 
 .mainContainer{
-  height: auto;
+  height: 860px;
   }
   
   .cardMobileCarousel{
     display: block;
+    height: 100%;
   }
 
   .titleContainer{
@@ -71,4 +73,10 @@ height: 974px;
 
   }
 
+}
+
+@media (min-width:750px) and (max-width: 860px) {
+  .cardMobileCarousel{
+   width: 100%;
+  }
 }

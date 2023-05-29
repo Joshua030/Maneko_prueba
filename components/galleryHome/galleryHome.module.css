@@ -47,7 +47,7 @@
   top: 287px;
 }
 
-@media (max-width: 544px) {
+@media (max-width: 850px) {
   .titleInnerContainer {
     padding-left: 24px;
   }
@@ -78,4 +78,11 @@
   .cardSectionContainer:not(:last-child) {
     border-right: none;
   }
+}
+
+@media (min-width:750px) and (max-width: 860px) {
+  .cardSectionContainer:not(:last-child) {
+    height: 127px;
+  }
+
 }
