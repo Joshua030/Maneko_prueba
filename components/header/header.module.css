@@ -267,7 +267,7 @@
   .socialButtons{
     display: flex;
     justify-content: space-between;
-    gap: 0;
+    gap:25px;
     padding: 0 60px;
   }
 

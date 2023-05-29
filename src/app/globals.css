@@ -57,3 +57,10 @@ a {
       display: none;
     }
   }
+
+  @media (max-width: 767px) {
+    /* Styles for screens narrower than 768px (mobile devices) */
+    html,Body {
+      overflow-y: auto; /* Reset overflow-y property for mobile */
+    }
+  }
