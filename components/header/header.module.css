@@ -256,6 +256,12 @@
   .socialContainer{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+      display: flex;
+      height: 50px;
+      align-items: center;
+      padding-bottom: 0;
+      width: 100%;
+  
   }
 
   .socialButtons{
@@ -275,5 +281,9 @@
 
   .userMenuContainer.mobile{
     display: grid;
+  }
+
+  .customMobile{
+    width: 50%;
   }
 }
