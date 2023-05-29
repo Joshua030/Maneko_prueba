@@ -1,6 +1,6 @@
 [
   {
-    "imgUrl": "/static/product1.png",
+    "imgUrl": "/static/products/Product1.png",
     "width": 98,
     "height": 345,
     "category": "SÉRUM",
@@ -11,7 +11,7 @@
     
   },
   {
-    "imgUrl": "/static/products/product2.png",
+    "imgUrl": "/static/products/Product2.png",
     "width": 244,
     "height": 210,
     "category": "CREMA",
@@ -22,7 +22,7 @@
     
   },
   {
-    "imgUrl": "/static/products/product3.png",
+    "imgUrl": "/static/products/Product3.png",
     "width": 197,
     "height": 365,
     "category": "LOCIONES",
