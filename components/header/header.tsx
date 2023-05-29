@@ -16,8 +16,10 @@ const Header = () => {
   };
 
   const toggleBodyOverflow = (hidden: boolean) => {
-    document.documentElement.style.overflowY = hidden ? "hidden" : "auto";
-    document.body.style.overflowY = hidden ? "hidden" : "auto";
+    if (window.innerWidth >= 700) { // Apply overflow styles only for wider screens
+      document.documentElement.style.overflowY = hidden ? "hidden" : "auto";
+      document.body.style.overflowY = hidden ? "hidden" : "auto";
+    }
   };
 
   useEffect(() => {
